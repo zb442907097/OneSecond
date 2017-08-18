@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.onesecond.MainActivity"
+    android:gravity="center"
+    android:background="#0096fa"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你的一秒有多长!!!"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+   <LinearLayout
+       android:id="@+id/ll_btn"
+       android:clickable="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+       <TextView
+           android:id="@+id/tv_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0秒" />
+    <TextView
+       android:id="@+id/tx_action"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="现在开始!!!"
+        android:visibility="visible"
+       android:textSize="26sp"/>
+       <TextView
+           android:id="@+id/tx_time2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:text=""
+           android:textSize="26sp"/>
+       <TextView
+           android:id="@+id/tx_des"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:text=""
+           android:textSize="26sp"/>
+   </LinearLayout>
+    <TextView
+        android:id="@+id/tx_try"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你已经尝试了0次" />
+
+    <TextView
+        android:id="@+id/tv_nomal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="凡人:" />
+
+    <TextView
+        android:id="@+id/tv_god"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大神:" />
+
+</LinearLayout>
